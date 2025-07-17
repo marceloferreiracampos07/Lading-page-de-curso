@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/projeto\ imagem.jpg);
+    background-repeat: no repeat;
+    color: white;
+}
+.hero,#beneficios{
+    color: #f3f3f3;
+}
+.navegaçao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f9fa;  /* cor de fundo clara */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+
+}
+.navegaçao ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+.navegaçao li a {
+    border: 1px solid #333;
+    margin: 2px 4px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #f3f3f3;
+    text-decoration: none;
+
+}
+.navegaçao a:hover {
+  color: #f3f3f3;
+}
+
+
+.logo {
+  height: 50px; /* ajusta conforme o necessário */
+  width: auto;  /* mantém a proporção */
+}
+.cabeçalho{
+    background-color: #1e1e1e1e;
+}
+/*CORPO DO SITE */
+.aprendizado h2, li {
+    font-size: 1.8rem; /* Um pouco maior para destaque */
+    color: #f3f3f3; /* Cor escura para o título */
+    margin-bottom: 40px; /* Mais espaço abaixo do título */
+    font-weight: 600; /* Levemente mais negrito */
+}
+
+

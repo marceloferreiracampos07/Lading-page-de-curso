@@ -1,0 +1,51 @@
+body{
+    background-image: url(img/projeto\ imagem.jpg);
+
+}
+.navegaçao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f9fa;  /* cor de fundo clara */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+
+}
+.navegaçao ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+.navegaçao li a {
+    border: 1px solid #333;
+    margin: 2px 4px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #f3f3f3;
+    text-decoration: none;
+
+}
+.navegaçao a:hover {
+  color: #f3f3f3;
+}
+
+
+.logo {
+  height: 50px; /* ajusta conforme o necessário */
+  width: auto;  /* mantém a proporção */
+}
+.cabeçalho{
+    background-color: #1e1e1e1e;
+}
