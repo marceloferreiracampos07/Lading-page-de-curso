@@ -1,0 +1,143 @@
+/* Estilos básicos para o body e fundo (mantenha os que já tem) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    background-image: url('sua-imagem-de-fundo.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* --- Estilos do Cabeçalho e Navbar Fixa --- */
+.cabeçalho {
+    position: fixed; /* Fixa o cabeçalho na viewport */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #222; /* Fundo escuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    z-index: 1000; /* Acima de outros elementos */
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.navegaçao {
+    display: flex; /* Habilita Flexbox */
+    justify-content: space-between; /* Espaço entre os grupos de itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 15px 20px; /* Espaçamento interno da navbar */
+    max-width: 1200px; /* Largura máxima para conteúdo, ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza a navegação dentro do cabeçalho */
+}
+
+/* Agrupando o logo e o título */
+.logo-titulo-group { /* Adicione esta div ao seu HTML envolvendo <img> e <h1> */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Altura do logo */
+    margin-right: 10px; /* Espaço entre o logo e o título */
+}
+
+.navegaçao h1 {
+    color: white; /* Cor do título */
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove margem padrão do h1 */
+}
+
+.nav-item {
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Habilita Flexbox para os itens da lista */
+    gap: 15px; /* Espaço entre os itens da lista */
+}
+
+.nav-item li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+    background-color: #007bff; /* Fundo dos "botões" */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block; /* Para que o padding funcione corretamente */
+}
+
+.nav-item li a:hover {
+    background-color: #0056b3;
+}
+
+
+/* --- Estilos do Conteúdo Principal e Formulário --- */
+main {
+  
+    margin-top: 80px; 
+    padding-top: 20px; 
+    min-height: calc(100vh - 80px); 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.formlogin {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+    color: #333; 
+    text-align: center; 
+}
+
+.formlogin h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.campo input[type="email"],
+.campo input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo input[type="email"]:focus,
+.campo input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.formlogin .btn { 
+     background-color: #007bff; 
+    color: white; 
+    /padding: 15px; 
+    border: none; 
+     border-radius: 5px; 
+    font-size: 18px; 
+    cursor: pointer;
+    margin-top: 20px;  
+    width: 100%;  
+}
+
